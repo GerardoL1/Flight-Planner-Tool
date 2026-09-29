@@ -1,4 +1,4 @@
-# Flight Route Planner
+# Flight Planner Tool
 
 A Java program that finds every possible route between two cities and ranks the top three itineraries by **travel time** or **cost**. Built from scratch with a custom graph, a custom stack, and a hand-written sort, with no graph or sorting libraries.
 
