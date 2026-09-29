@@ -35,10 +35,10 @@ class FlightProcessorHelper {
     }
 
     /**
-     * Appends the best routes for one request to the output file.
+     * Appends a formatted results table for one request to the output file.
      *
-     * <p>Writes up to three routes, or fewer if fewer exist. If there are none, a message is
-     * printed to the console.
+     * <p>Each request is written as a titled block with a ranked table of up to three routes.
+     * If no route exists, the block says so instead of showing a table.
      *
      * @param validPaths      routes for this request, already sorted
      * @param originCity      the departure city
@@ -48,31 +48,59 @@ class FlightProcessorHelper {
      */
     public static void print(List<FlightPath> validPaths, String originCity,
                              String destinationCity, String sortCriterion, int flightNumber) {
-        int numToPrint = 3;
-        if (validPaths.size() < 3) {
-            numToPrint = validPaths.size();
-        }
+        int numToPrint = Math.min(3, validPaths.size());
+        String criterion = sortCriterion.equals("T") ? "time" : "cost";
         try {
             File obj = new File("sample_output/output.txt");
             FileWriter out = new FileWriter(obj, true);
-            out.write("Flight " + flightNumber + ": " + originCity + ", " + destinationCity + " ("
-                    + (sortCriterion.equals("T") ? "Time" : "Cost") + ")\n");
-            for (int g = 0; g < numToPrint; g++) {
-                FlightPath fp = validPaths.get(g);
-                out.write("Path " + (g + 1) + ": " + String.join(" -> ", fp.path)
-                        + ". | Time: " + fp.totalTime + " | Cost: " + fp.totalCost + "\n");
-            }
+            out.write("Request " + flightNumber + ": " + originCity + " to " + destinationCity
+                    + "\n");
+            out.write("Ranked by " + criterion + " | Showing " + numToPrint + " of "
+                    + validPaths.size() + " routes\n");
             if (validPaths.isEmpty()) {
+                out.write("No route available.\n\n");
                 System.out.println("No valid flight path available between " + originCity
                         + " and " + destinationCity);
+            } else {
+                // Size the route column to the longest route shown so the table stays aligned.
+                int routeWidth = "Route".length();
+                for (int g = 0; g < numToPrint; g++) {
+                    routeWidth = Math.max(routeWidth,
+                            String.join(" -> ", validPaths.get(g).path).length());
+                }
+                String rowFormat = "%-6s%-" + (routeWidth + 3) + "s%7s%7s\n";
+                String divider = repeat('-', 6 + routeWidth + 3 + 14);
+                out.write(divider + "\n");
+                out.write(String.format(rowFormat, "Rank", "Route", "Time", "Cost"));
+                out.write(divider + "\n");
+                for (int g = 0; g < numToPrint; g++) {
+                    FlightPath fp = validPaths.get(g);
+                    out.write(String.format(rowFormat, g + 1, String.join(" -> ", fp.path),
+                            fp.totalTime, fp.totalCost));
+                }
+                out.write(divider + "\n\n");
             }
-
             out.close();
-            System.out.println("Flight paths written to output.txt");
+            System.out.println("Flight paths written to sample_output/output.txt");
         } catch (IOException e) {
             System.out.println("An error occurred while writing to the file.");
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Builds a string by repeating a character.
+     *
+     * @param ch    the character to repeat
+     * @param count how many times to repeat it
+     * @return the repeated string
+     */
+    private static String repeat(char ch, int count) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < count; i++) {
+            sb.append(ch);
+        }
+        return sb.toString();
     }
 
     /**

@@ -1,4 +1,4 @@
-# Flight Planner Tool
+# Flight Route Planner
 
 A Java program that finds every possible route between two cities and ranks the top three itineraries by **travel time** or **cost**. Built from scratch with a custom graph, a custom stack, and a hand-written sort, with no graph or sorting libraries.
 
@@ -80,22 +80,28 @@ The criterion is `T` to rank by time or `C` to rank by cost.
 
 ## Example
 
-Given the request `Dallas|New York|T`, the program writes:
+Given the requests `Dallas|New York|T` and `Dallas|Charlotte|C`, the program writes:
 
 ```
-Flight 1: Dallas, New York (Time)
-Path 1: Dallas -> New York. | Time: 209 | Cost: 189
-Path 2: Dallas -> Chicago -> New York. | Time: 233 | Cost: 300
-Path 3: Dallas -> Charlotte -> New York. | Time: 255 | Cost: 380
-```
+Request 1: Dallas to New York
+Ranked by time | Showing 3 of 87 routes
+------------------------------------------------------
+Rank  Route                                Time   Cost
+------------------------------------------------------
+1     Dallas -> New York                    209    189
+2     Dallas -> Chicago -> New York         233    300
+3     Dallas -> Charlotte -> New York       255    380
+------------------------------------------------------
 
-And for `Dallas|Charlotte|C` (ranked by cost):
-
-```
-Flight 2: Dallas, Charlotte (Cost)
-Path 1: Dallas -> Charlotte. | Time: 137 | Cost: 209
-Path 2: Dallas -> Chicago -> Charlotte. | Time: 223 | Cost: 321
-Path 3: Dallas -> New York -> Charlotte. | Time: 327 | Cost: 360
+Request 2: Dallas to Charlotte
+Ranked by cost | Showing 3 of 49 routes
+------------------------------------------------------
+Rank  Route                                Time   Cost
+------------------------------------------------------
+1     Dallas -> Charlotte                   137    209
+2     Dallas -> Chicago -> Charlotte        223    321
+3     Dallas -> New York -> Charlotte       327    360
+------------------------------------------------------
 ```
 
 The complete output for the included dataset is in [`sample_output/output.txt`](sample_output/output.txt).

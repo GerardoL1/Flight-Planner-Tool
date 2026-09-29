@@ -1,44 +1,110 @@
-Flight 1: Dallas, New York (Time)
-Path 1: Dallas -> New York. | Time: 209 | Cost: 189
-Path 2: Dallas -> Chicago -> New York. | Time: 233 | Cost: 300
-Path 3: Dallas -> Charlotte -> New York. | Time: 255 | Cost: 380
-Flight 2: Dallas, Charlotte (Cost)
-Path 1: Dallas -> Charlotte. | Time: 137 | Cost: 209
-Path 2: Dallas -> Chicago -> Charlotte. | Time: 223 | Cost: 321
-Path 3: Dallas -> New York -> Charlotte. | Time: 327 | Cost: 360
-Flight 3: Chicago, Miami (Cost)
-Path 1: Chicago -> New York -> Miami. | Time: 308 | Cost: 300
-Path 2: Chicago -> Dallas -> Miami. | Time: 262 | Cost: 346
-Path 3: Chicago -> Charlotte -> Miami. | Time: 260 | Cost: 353
-Flight 4: Phoenix, Boston (Time)
-Path 1: Phoenix -> Dallas -> New York -> Boston. | Time: 407 | Cost: 585
-Path 2: Phoenix -> Dallas -> Chicago -> New York -> Boston. | Time: 431 | Cost: 696
-Path 3: Phoenix -> Dallas -> Charlotte -> Philadelphia -> Boston. | Time: 439 | Cost: 754
-Flight 5: Los Angeles, Philadelphia (Cost)
-Path 1: Los Angeles -> Charlotte -> Philadelphia. | Time: 402 | Cost: 398
-Path 2: Los Angeles -> Dallas -> Charlotte -> Philadelphia. | Time: 427 | Cost: 577
-Path 3: Los Angeles -> Chicago -> Charlotte -> Philadelphia. | Time: 472 | Cost: 580
-Flight 6: Boston, San Francisco (Time)
-Path 1: Boston -> New York -> Dallas -> Phoenix -> San Francisco. | Time: 525 | Cost: 722
-Path 2: Boston -> New York -> Chicago -> Los Angeles -> San Francisco. | Time: 541 | Cost: 674
-Path 3: Boston -> New York -> Chicago -> Dallas -> Phoenix -> San Francisco. | Time: 549 | Cost: 833
-Flight 7: Atlanta, Miami (Time)
-Path 1: Atlanta -> Charlotte -> Miami. | Time: 215 | Cost: 481
-Path 2: Atlanta -> Charlotte -> Dallas -> Miami. | Time: 361 | Cost: 710
-Path 3: Atlanta -> Charlotte -> New York -> Miami. | Time: 371 | Cost: 620
-Flight 8: New York, San Francisco (Cost)
-Path 1: New York -> Dallas -> Los Angeles -> San Francisco. | Time: 488 | Cost: 475
-Path 2: New York -> Chicago -> Los Angeles -> San Francisco. | Time: 471 | Cost: 477
-Path 3: New York -> Charlotte -> Los Angeles -> San Francisco. | Time: 509 | Cost: 487
-Flight 9: Washington D.C., Chicago (Time)
-Path 1: Washington D.C. -> New York -> Chicago. | Time: 195 | Cost: 282
-Path 2: Washington D.C. -> Charlotte -> Chicago. | Time: 206 | Cost: 353
-Path 3: Washington D.C. -> Charlotte -> Atlanta -> Chicago. | Time: 274 | Cost: 640
-Flight 10: Miami, San Francisco (Cost)
-Path 1: Miami -> Dallas -> Los Angeles -> San Francisco. | Time: 433 | Cost: 485
-Path 2: Miami -> Charlotte -> Los Angeles -> San Francisco. | Time: 536 | Cost: 495
-Path 3: Miami -> Dallas -> Phoenix -> San Francisco. | Time: 400 | Cost: 535
-Flight 11: Washington D.C., Orlando (Cost)
-Path 1: Washington D.C. -> New York -> Miami -> Orlando. | Time: 318 | Cost: 411
-Path 2: Washington D.C. -> Charlotte -> Miami -> Orlando. | Time: 301 | Cost: 493
-Path 3: Washington D.C. -> New York -> Charlotte -> Miami -> Orlando. | Time: 398 | Cost: 614
+Request 1: Dallas to New York
+Ranked by time | Showing 3 of 87 routes
+------------------------------------------------------
+Rank  Route                                Time   Cost
+------------------------------------------------------
+1     Dallas -> New York                    209    189
+2     Dallas -> Chicago -> New York         233    300
+3     Dallas -> Charlotte -> New York       255    380
+------------------------------------------------------
+
+Request 2: Dallas to Charlotte
+Ranked by cost | Showing 3 of 49 routes
+------------------------------------------------------
+Rank  Route                                Time   Cost
+------------------------------------------------------
+1     Dallas -> Charlotte                   137    209
+2     Dallas -> Chicago -> Charlotte        223    321
+3     Dallas -> New York -> Charlotte       327    360
+------------------------------------------------------
+
+Request 3: Chicago to Miami
+Ranked by cost | Showing 3 of 130 routes
+----------------------------------------------------
+Rank  Route                              Time   Cost
+----------------------------------------------------
+1     Chicago -> New York -> Miami        308    300
+2     Chicago -> Dallas -> Miami          262    346
+3     Chicago -> Charlotte -> Miami       260    353
+----------------------------------------------------
+
+Request 4: Phoenix to Boston
+Ranked by time | Showing 3 of 393 routes
+-------------------------------------------------------------------------------
+Rank  Route                                                         Time   Cost
+-------------------------------------------------------------------------------
+1     Phoenix -> Dallas -> New York -> Boston                        407    585
+2     Phoenix -> Dallas -> Chicago -> New York -> Boston             431    696
+3     Phoenix -> Dallas -> Charlotte -> Philadelphia -> Boston       439    754
+-------------------------------------------------------------------------------
+
+Request 5: Los Angeles to Philadelphia
+Ranked by cost | Showing 3 of 240 routes
+--------------------------------------------------------------------------
+Rank  Route                                                    Time   Cost
+--------------------------------------------------------------------------
+1     Los Angeles -> Charlotte -> Philadelphia                  402    398
+2     Los Angeles -> Dallas -> Charlotte -> Philadelphia        427    577
+3     Los Angeles -> Chicago -> Charlotte -> Philadelphia       472    580
+--------------------------------------------------------------------------
+
+Request 6: Boston to San Francisco
+Ranked by time | Showing 3 of 449 routes
+------------------------------------------------------------------------------------------
+Rank  Route                                                                    Time   Cost
+------------------------------------------------------------------------------------------
+1     Boston -> New York -> Dallas -> Phoenix -> San Francisco                  525    722
+2     Boston -> New York -> Chicago -> Los Angeles -> San Francisco             541    674
+3     Boston -> New York -> Chicago -> Dallas -> Phoenix -> San Francisco       549    833
+------------------------------------------------------------------------------------------
+
+Request 7: Atlanta to Miami
+Ranked by time | Showing 3 of 167 routes
+----------------------------------------------------------------
+Rank  Route                                          Time   Cost
+----------------------------------------------------------------
+1     Atlanta -> Charlotte -> Miami                   215    481
+2     Atlanta -> Charlotte -> Dallas -> Miami         361    710
+3     Atlanta -> Charlotte -> New York -> Miami       371    620
+----------------------------------------------------------------
+
+Request 8: New York to San Francisco
+Ranked by cost | Showing 3 of 217 routes
+----------------------------------------------------------------------------
+Rank  Route                                                      Time   Cost
+----------------------------------------------------------------------------
+1     New York -> Dallas -> Los Angeles -> San Francisco          488    475
+2     New York -> Chicago -> Los Angeles -> San Francisco         471    477
+3     New York -> Charlotte -> Los Angeles -> San Francisco       509    487
+----------------------------------------------------------------------------
+
+Request 9: Washington D.C. to Chicago
+Ranked by time | Showing 3 of 137 routes
+-------------------------------------------------------------------------
+Rank  Route                                                   Time   Cost
+-------------------------------------------------------------------------
+1     Washington D.C. -> New York -> Chicago                   195    282
+2     Washington D.C. -> Charlotte -> Chicago                  206    353
+3     Washington D.C. -> Charlotte -> Atlanta -> Chicago       274    640
+-------------------------------------------------------------------------
+
+Request 10: Miami to San Francisco
+Ranked by cost | Showing 3 of 285 routes
+-------------------------------------------------------------------------
+Rank  Route                                                   Time   Cost
+-------------------------------------------------------------------------
+1     Miami -> Dallas -> Los Angeles -> San Francisco          433    485
+2     Miami -> Charlotte -> Los Angeles -> San Francisco       536    495
+3     Miami -> Dallas -> Phoenix -> San Francisco              400    535
+-------------------------------------------------------------------------
+
+Request 11: Washington D.C. to Orlando
+Ranked by cost | Showing 3 of 138 routes
+-----------------------------------------------------------------------------------
+Rank  Route                                                             Time   Cost
+-----------------------------------------------------------------------------------
+1     Washington D.C. -> New York -> Miami -> Orlando                    318    411
+2     Washington D.C. -> Charlotte -> Miami -> Orlando                   301    493
+3     Washington D.C. -> New York -> Charlotte -> Miami -> Orlando       398    614
+-----------------------------------------------------------------------------------
+
