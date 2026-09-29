@@ -1,0 +1,44 @@
+Flight 1: Dallas, New York (Time)
+Path 1: Dallas -> New York. | Time: 209 | Cost: 189
+Path 2: Dallas -> Chicago -> New York. | Time: 233 | Cost: 300
+Path 3: Dallas -> Charlotte -> New York. | Time: 255 | Cost: 380
+Flight 2: Dallas, Charlotte (Cost)
+Path 1: Dallas -> Charlotte. | Time: 137 | Cost: 209
+Path 2: Dallas -> Chicago -> Charlotte. | Time: 223 | Cost: 321
+Path 3: Dallas -> New York -> Charlotte. | Time: 327 | Cost: 360
+Flight 3: Chicago, Miami (Cost)
+Path 1: Chicago -> New York -> Miami. | Time: 308 | Cost: 300
+Path 2: Chicago -> Dallas -> Miami. | Time: 262 | Cost: 346
+Path 3: Chicago -> Charlotte -> Miami. | Time: 260 | Cost: 353
+Flight 4: Phoenix, Boston (Time)
+Path 1: Phoenix -> Dallas -> New York -> Boston. | Time: 407 | Cost: 585
+Path 2: Phoenix -> Dallas -> Chicago -> New York -> Boston. | Time: 431 | Cost: 696
+Path 3: Phoenix -> Dallas -> Charlotte -> Philadelphia -> Boston. | Time: 439 | Cost: 754
+Flight 5: Los Angeles, Philadelphia (Cost)
+Path 1: Los Angeles -> Charlotte -> Philadelphia. | Time: 402 | Cost: 398
+Path 2: Los Angeles -> Dallas -> Charlotte -> Philadelphia. | Time: 427 | Cost: 577
+Path 3: Los Angeles -> Chicago -> Charlotte -> Philadelphia. | Time: 472 | Cost: 580
+Flight 6: Boston, San Francisco (Time)
+Path 1: Boston -> New York -> Dallas -> Phoenix -> San Francisco. | Time: 525 | Cost: 722
+Path 2: Boston -> New York -> Chicago -> Los Angeles -> San Francisco. | Time: 541 | Cost: 674
+Path 3: Boston -> New York -> Chicago -> Dallas -> Phoenix -> San Francisco. | Time: 549 | Cost: 833
+Flight 7: Atlanta, Miami (Time)
+Path 1: Atlanta -> Charlotte -> Miami. | Time: 215 | Cost: 481
+Path 2: Atlanta -> Charlotte -> Dallas -> Miami. | Time: 361 | Cost: 710
+Path 3: Atlanta -> Charlotte -> New York -> Miami. | Time: 371 | Cost: 620
+Flight 8: New York, San Francisco (Cost)
+Path 1: New York -> Dallas -> Los Angeles -> San Francisco. | Time: 488 | Cost: 475
+Path 2: New York -> Chicago -> Los Angeles -> San Francisco. | Time: 471 | Cost: 477
+Path 3: New York -> Charlotte -> Los Angeles -> San Francisco. | Time: 509 | Cost: 487
+Flight 9: Washington D.C., Chicago (Time)
+Path 1: Washington D.C. -> New York -> Chicago. | Time: 195 | Cost: 282
+Path 2: Washington D.C. -> Charlotte -> Chicago. | Time: 206 | Cost: 353
+Path 3: Washington D.C. -> Charlotte -> Atlanta -> Chicago. | Time: 274 | Cost: 640
+Flight 10: Miami, San Francisco (Cost)
+Path 1: Miami -> Dallas -> Los Angeles -> San Francisco. | Time: 433 | Cost: 485
+Path 2: Miami -> Charlotte -> Los Angeles -> San Francisco. | Time: 536 | Cost: 495
+Path 3: Miami -> Dallas -> Phoenix -> San Francisco. | Time: 400 | Cost: 535
+Flight 11: Washington D.C., Orlando (Cost)
+Path 1: Washington D.C. -> New York -> Miami -> Orlando. | Time: 318 | Cost: 411
+Path 2: Washington D.C. -> Charlotte -> Miami -> Orlando. | Time: 301 | Cost: 493
+Path 3: Washington D.C. -> New York -> Charlotte -> Miami -> Orlando. | Time: 398 | Cost: 614

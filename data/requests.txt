@@ -1,0 +1,12 @@
+11
+Dallas|New York|T
+Dallas|Charlotte|C
+Chicago|Miami|C
+Phoenix|Boston|T
+Los Angeles|Philadelphia|C
+Boston|San Francisco|T
+Atlanta|Miami|T
+New York|San Francisco|C
+Washington D.C.|Chicago|T
+Miami|San Francisco|C
+Washington D.C.|Orlando|C

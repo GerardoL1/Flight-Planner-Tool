@@ -1,0 +1,26 @@
+25
+Dallas|Chicago|108|147
+Dallas|New York|209|189
+Dallas|Miami|154|199
+Dallas|Phoenix|128|199
+Dallas|Los Angeles|194|169
+Dallas|Charlotte|137|209
+Chicago|New York|125|153
+Chicago|Los Angeles|261|207
+Chicago|Charlotte|115|174
+Miami|New York|183|147
+Miami|Charlotte|145|179
+Phoenix|Los Angeles|84|97
+New York|Charlotte|118|171
+Los Angeles|Charlotte|306|199
+Orlando|Miami|65|135
+Charlotte|Philadelphia|96|199
+Philadelphia|Boston|78|147
+Philadelphia|New York|65|297
+Boston|New York|70|197
+Los Angeles|San Francisco|85|117
+Phoenix|San Francisco|118|137
+Chicago|Atlanta|113|159
+Atlanta|Charlotte|70|302
+Washington D.C.|New York|70|129
+Washington D.C.|Charlotte|91|179
